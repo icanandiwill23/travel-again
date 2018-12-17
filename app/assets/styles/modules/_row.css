@@ -1,0 +1,34 @@
+.row{
+
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -65px;
+  }
+
+  &--gutters > div{
+    padding-right: 65px;
+  }
+
+  /* Medium Media Query */
+
+  @mixin atMedium{
+    &--medium-4{
+      width: 33.33%;
+      float: left;
+    }
+
+    &--medium-4-larger{
+      width: 37%;
+    }
+
+    &--medium-6{
+      width: 66.66%;
+      float: left;
+    }
+
+    &--medium-6-smaller{
+      width: 63%;
+    }
+  }
+}
