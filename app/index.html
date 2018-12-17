@@ -48,12 +48,17 @@
       <h3 class="heading heading--light heading--centered heading--orange heading--b-margin-large heading--narrow heading--font-small">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
 
       <div class="container container--medium container--mb-on-medium">
-        <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
+        <img sizes="(min-width: 992px), 100vw" srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
       </div>
 
       <div class="row row--gutters">
-        <div class="row--medium-4 row--medium-4-larger">
-          <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
+        <div class="row--medium-4 row--medium-4-larger row--mb-until-med">
+          <picture>
+            <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 992px)">
+            <source sizes="320px" srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 768px)">
+            <source srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" media="(min-width: 530px)">
+            <img src="assets/images/our-start-landscape-small.jpg" alt="Our founder, Jane Doe">
+          </picture>
         </div>
 
         <div class="row--medium-6 row--medium-6-smaller">

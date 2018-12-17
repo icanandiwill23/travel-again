@@ -10,8 +10,15 @@
     padding-right: 65px;
   }
 
-  /* Medium Media Query */
+  &--mb-until-med{
+    margin-bottom: 1rem;
 
+    @mixin atMedium{
+      margin-bottom: 0;
+    }
+  }
+
+  /* Medium Media Query */
   @mixin atMedium{
     &--medium-4{
       width: 33.33%;

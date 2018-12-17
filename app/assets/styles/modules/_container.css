@@ -17,4 +17,9 @@
       margin-bottom: 3.75rem;
     }
   }
+
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
