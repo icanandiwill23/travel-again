@@ -10,6 +10,14 @@
     padding-right: 65px;
   }
 
+  &--gutters-large{
+    margin-right: -100px;
+  }
+
+  &--gutters-large > div{
+    padding-right: 100px;
+  }
+
   &--mb-until-med{
     margin-bottom: 1rem;
 
@@ -20,21 +28,26 @@
 
   /* Medium Media Query */
   @mixin atMedium{
-    &--medium-4{
+    &__medium-4{
       width: 33.33%;
       float: left;
     }
 
-    &--medium-4-larger{
+    &__medium-4--larger{
       width: 37%;
     }
 
-    &--medium-6{
+    &__medium-6{
+      width: 50%;
+      float: left;
+    }
+
+    &__medium-8{
       width: 66.66%;
       float: left;
     }
 
-    &--medium-6-smaller{
+    &__medium-8--smaller{
       width: 63%;
     }
   }

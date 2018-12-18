@@ -490,7 +490,7 @@ img {
 @media (min-width: 768px){
 
 .container--mb-on-medium{
-      margin-bottom: 3.75rem
+      margin-bottom: 3.875rem
   }
   }
 
@@ -563,6 +563,14 @@ img {
     padding-right: 65px;
   }
 
+.row--gutters-large{
+    margin-right: -100px;
+  }
+
+.row--gutters-large > div{
+    padding-right: 100px;
+  }
+
 .row--mb-until-med{
     margin-bottom: 1rem;
   }
@@ -577,21 +585,26 @@ img {
 /* Medium Media Query */
 
 @media (min-width: 768px){
-    .row--medium-4{
+    .row__medium-4{
       width: 33.33%;
       float: left;
     }
 
-    .row--medium-4-larger{
+    .row__medium-4--larger{
       width: 37%;
     }
 
-    .row--medium-6{
+    .row__medium-6{
+      width: 50%;
+      float: left;
+    }
+
+    .row__medium-8{
       width: 66.66%;
       float: left;
     }
 
-    .row--medium-6-smaller{
+    .row__medium-8--smaller{
       width: 63%;
     }
   }
@@ -610,5 +623,83 @@ img {
   }
 
 .generic-container p a{
+    font-weight: 700;
+  }
+
+.section-title{
+  text-align: center;
+  font-size: 2.55rem;
+  font-weight: 300;
+}
+
+@media (min-width: 530px){
+
+.section-title{
+    font-size: 3.75rem
+}
+  }
+
+.section-title__icon{
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+@media (min-width: 768px){
+
+.section-title__icon{
+      display: inline-block;
+      position: relative;
+      top: 8px;
+      margin-right: .5rem;
+      margin-left: auto;
+      margin-bottom: 0
+  }
+  }
+
+.section-title strong{
     font-weight: 500;
+  }
+
+.feature-item{
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px){
+
+.feature-item{
+    padding-left: 94px;
+    position: relative
+}
+  }
+
+.feature-item__icon{
+    display: block;
+    margin: 0 auto;
+  }
+
+@media (min-width: 768px){
+
+.feature-item__icon{
+      position: absolute;
+      top: 0;
+      left: 0
+  }
+  }
+
+.feature-item__title{
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: .8rem;
+    text-align: center;
+    margin-top: .7rem;
+  }
+
+@media (min-width: 768px){
+
+.feature-item__title{
+      font-size: 1.875rem;
+      text-align: left
+  }
   }
