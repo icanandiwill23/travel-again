@@ -24,4 +24,8 @@
   strong{
     font-weight: 500;
   }
+
+  &--blue{
+    color: $mainBlue;
+  }
 }

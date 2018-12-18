@@ -1,6 +1,18 @@
 .row{
 
+  &--mt-large{
+    padding-top: 80px;
+  }
+
   @mixin clearfix;
+
+  &--gutters-smaller {
+    margin-right: -45px;
+  }
+
+  &--gutters-smaller > div{
+    padding-right: 45px;
+  }
 
   &--gutters {
     margin-right: -65px;
@@ -28,6 +40,14 @@
 
   /* Medium Media Query */
   @mixin atMedium{
+    &--equal-height-on-med{
+      display: flex;
+
+      & > div{
+        display: flex;
+      }
+    }
+
     &__medium-4{
       width: 33.33%;
       float: left;
